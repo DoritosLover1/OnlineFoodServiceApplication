@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         customers.h customers.cpp
         restaurants.h restaurants.cpp
         foods.h foods.cpp
+        resource.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET OnlineFoodService APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

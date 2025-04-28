@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>images/icons/smile-beam.png</file>
+        <file>images/icons/setting.png</file>
+        <file>images/icons/search.png</file>
+    </qresource>
+</RCC>
