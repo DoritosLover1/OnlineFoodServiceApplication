@@ -13,17 +13,17 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
-{
-
-}
-
-
 void MainWindow::on_accountButton_clicked()
 {
     accountSettingWindow = new AccountSettingWindow();
     accountSettingWindow->show();
     accountSettingWindow->raise();
     accountSettingWindow->activateWindow();
+}
+
+
+void MainWindow::on_settingButton_clicked()
+{
+
 }
 
