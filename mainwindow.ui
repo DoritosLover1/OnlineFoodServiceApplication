@@ -19,6 +19,9 @@
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QPushButton" name="accountButton">
     <property name="geometry">
      <rect>
