@@ -15,15 +15,28 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_accountButton_clicked()
 {
-    accountSettingWindow = new AccountSettingWindow();
-    accountSettingWindow->show();
-    accountSettingWindow->raise();
-    accountSettingWindow->activateWindow();
+    if (!accountSettingWindow) {
+        accountSettingWindow = new AccountSettingWindow();
+    }
+
+    if (!accountSettingWindow->isVisible()) {
+        accountSettingWindow->show();
+        accountSettingWindow->raise();
+        accountSettingWindow->activateWindow();
+    }
 }
 
 
 void MainWindow::on_settingButton_clicked()
 {
+    if (!mainSettingWindow) {
+        mainSettingWindow = new MainSettingWindow();
+    }
 
+    if (!mainSettingWindow->isVisible()) {
+        mainSettingWindow->show();
+        mainSettingWindow->raise();
+        mainSettingWindow->activateWindow();
+    }
 }
 

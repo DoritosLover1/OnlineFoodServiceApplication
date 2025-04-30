@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include "accountsettingwindow.h"
+#include "mainsettingwindow.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -20,6 +21,7 @@ public:
 
 private:
     AccountSettingWindow* accountSettingWindow;
+    MainSettingWindow* mainSettingWindow;
 
 private slots:
     void on_accountButton_clicked();
